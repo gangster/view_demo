@@ -1,0 +1,15 @@
+<div class="col-sm-4 col-lg-4 col-md-4">
+  <div class="thumbnail">
+    <img src="<%= product.thumbnail_url %>" alt=""/>
+    <div class="caption">
+      <h4 class="pull-right"><%= product.price %></h4>
+      <h4><a href="#"><%= product.name %></a></h4>
+      <%= raw product.description %>
+    </div>
+    <div class="ratings">
+      <p class="pull-right"><%= product.review_count %> reviews</p>
+      <%= component Shop::ProductRating, average_rating: product.average_rating %>
+    </div>
+  </div>
+</div>
+

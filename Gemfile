@@ -19,6 +19,9 @@ gem 'high_voltage'
 gem 'pg'
 gem 'puma'
 gem 'simple_form'
+gem 'view', path: '/Users/jdeeden/work/view'
+gem 'money'
+
 group :development do
   gem 'better_errors'
   gem 'foreman'
