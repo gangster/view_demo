@@ -16,7 +16,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-gem 'pg'
+gem 'sqlite3'
 gem 'puma'
 gem 'simple_form'
 gem 'view', path: '/Users/jdeeden/work/view'
