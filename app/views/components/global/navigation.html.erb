@@ -1,0 +1,24 @@
+<%# navigation styled for Bootstrap 3.0 %>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <%= component Global::NavLink, text: 'About', path: page_path('about'), show: true %>
+        <%= component Global::NavLink, text: 'Edit account', path: edit_user_registration_path, show: user_signed_in? %>
+        <%= component Global::NavLink, text: 'Sign Out', path:  destroy_user_session_path, method: 'delete', show: user_signed_in? %>
+        <%= component Global::NavLink, text: 'Sign in', path:  new_user_session_path,  show: !user_signed_in? %>
+        <%= component Global::NavLink, text: 'Sign up', path:  new_user_registration_path, show: !user_signed_in? %>
+        <%= component Global::NavLink, text: 'Users', path:  users_path, show: user_signed_in? %>
+      </ul>
+    </div>
+  </div>
+</nav>

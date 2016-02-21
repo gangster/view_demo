@@ -21,6 +21,7 @@ gem 'puma'
 gem 'simple_form'
 gem 'view', path: '/Users/jdeeden/work/view'
 gem 'money'
+gem 'backport_new_renderer'
 
 group :development do
   gem 'better_errors'

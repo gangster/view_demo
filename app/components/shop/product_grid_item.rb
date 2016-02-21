@@ -1,9 +1,7 @@
 module Shop
   class ProductGridItem < View::Component
     def html
-      render partial: 'components/shop/product_grid_item',
-             locals: { product: product }
-
+      render 'components/shop/product_grid_item'
     end
   end
 end

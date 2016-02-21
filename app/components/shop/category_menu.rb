@@ -2,8 +2,7 @@ module Shop
   class CategoryMenu < View::Component
 
     def html
-      render partial: 'components/shop/category_menu',
-             locals: { categories: categories }
+      render 'components/shop/category_menu'
     end
   end
 end

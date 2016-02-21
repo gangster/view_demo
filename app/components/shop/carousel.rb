@@ -1,8 +1,7 @@
 module Shop
   class Carousel < View::Component
     def html
-      render partial: 'components/shop/carousel',
-             locals: { items: items }
+      render 'components/shop/carousel'
     end
   end
 end

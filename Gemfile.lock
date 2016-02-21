@@ -2,6 +2,8 @@ PATH
   remote: /Users/jdeeden/work/view
   specs:
     view (0.1.0)
+      backport_new_renderer
+      binding_of_caller
       rails (~> 4.2.5.1)
       render_anywhere
 
@@ -49,6 +51,8 @@ GEM
     autoprefixer-rails (6.3.3)
       execjs
       json
+    backport_new_renderer (1.0.0)
+      rails
     bcrypt (3.1.10)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -297,6 +301,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backport_new_renderer
   better_errors
   bootstrap-sass
   byebug
