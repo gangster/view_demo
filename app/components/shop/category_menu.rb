@@ -2,7 +2,9 @@ module Shop
   class CategoryMenu < View::Component
 
     def html
-      render 'components/shop/category_menu'
+      content_tag :div, class: 'list-group' do
+        component CategoryMenuItems, categories: categories
+      end
     end
   end
 end

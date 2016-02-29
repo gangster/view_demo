@@ -1,11 +1,9 @@
 module Shop
   class ProductGridItems < View::Component
 
-    presenter ProductGridItemPresenter
-
     def html
-      products.map do |item|
-        component ProductGridItem, product: present(item)
+      products.map do |product|
+        component ProductGridItem, product: product
       end
     end
   end

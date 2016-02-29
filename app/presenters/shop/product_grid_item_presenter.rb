@@ -8,7 +8,6 @@ module Shop
       description_html
     end
 
-
     def review_count
       reviews.size
     end
@@ -16,6 +15,5 @@ module Shop
     def average_rating
       reviews.average(:rating).round
     end
-
   end
 end
